@@ -1,3 +1,7 @@
+docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress                                                      }}{{end}}' $(docker ps -aq)
+
+jenkins    http://localhost:8080/
+
 # CI Tools Demo
 
 This GitHub repository contains Dockerfiles for running a set of Continuous Integration Tools with a single command. The diagram contains all tools used in the Docker containers.
